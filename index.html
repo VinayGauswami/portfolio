@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vinaygauswamiportfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+    <header id="container">
+        <nav id="navbar">
+            <div class="logo">
+                <h1><span>V</span>inay<span>G</span>auswami</h1>
+            </div>
+            <ul id="tab-link">
+                <li><a href="#navbar">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact </a></li>
+                <ion-icon name="close-outline" onclick="closemenu()"></ion-icon>
+            </ul>
+            <ion-icon name="grid-outline" onclick="openmenu()"></ion-icon >
+        </nav>
+        <h1 id="intro">I am vinay Gauswami<br>UI/UX Desinger and a Web Developer<br> <span>Front </span> End Developer</h1>
+    </header>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="about.png" alt="this is about">
+                </div>
+                <div class="about-col-2">
+                    <h1>About<span> Me</span></h1>
+                    <p class="content">I am vinay gauswami. I have done my bachelor degre in computer application(BCA) from arya pg college,Panipat.
+                        While coming to my family we have four family member in my family.
+                        If i talk about me. I have a lot of intrest in web development and wanted to give my entire life to this skill.
+                    </p>
+                    <div id="tab-title">
+                        <p class="tab-link active-link" onclick="show('skill')">Skill</p>
+                        <p class="tab-link" onclick="show('experince')">Experince</p>
+                        <p class="tab-link" onclick="show('education')">Education</p> 
+                    </div>
+                    <div class="tab-content active-content" id="skill">
+                        <ul>
+                            <li><span>HTML</span><br>Design a very good structure of a website</li>
+                            <li><span>CSS</span><br>Making the webside very attractive</li>
+                            <li><span>Javascript</span><br>Provide very effective design to the website</li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="experince">
+                        <ul>
+                            <li><span>Recruitment</span><br>After completing my college.I used to work as a recruiter</li>
+                            <li><span>Project</span><br>For making my skill. I used to making small project. Which help me to learn different kind of technology</li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="education">
+                        <ul>
+                            <li><span>Secondary Education(2015-2016)</span><br>I have done my secondary education with 81.2% marks</li>
+                            <li><span>Senior Secondary Education(2017-2018)</span><br>I have done my senior secondary education with 82.8% marks</li>
+                            <li><span>Bachelor of Computer Application(2019-2022)</span><br>I have done my bachelor degree from arya pg college with 85% marks</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------------Services--------------- -->
+
+    <div id="services">
+        <div class="container">
+            <h1><span>My </span> Services</h1>
+                <div class="services-list">
+                    <div>
+                        <ion-icon name="code-slash-outline"></ion-icon>
+                        <h2>Web development</h2>
+                        <p>I am responsible for making a very good and attractive website.
+                            Making a responsive website.
+                        </p>
+                    </div>
+
+                    <div>
+                        <ion-icon name="book-outline"></ion-icon>
+                        <h2>Teaching</h2>
+                        <p>I am also available as a teacher.I can provide very good content
+                            related to computer field.
+                        </p>
+                    </div>
+                
+                    <div>
+                        <ion-icon name="people-outline"></ion-icon>
+                        <h2>Interview prepration</h2>
+                        <p>As we are fresher we don't know how to prepare for Interview.
+                            so here we also provide all the interview material.
+                        </p>
+                    </div>
+                </div>
+        </div>
+    </div>
+
+    <!-- ------------------contact me------------------- -->
+
+    <div id="contact">
+        <h1>Contact <span>Me</span></h1>
+        <div class="container">
+            <div class="row">
+                <div class="contact-col-1">
+                    <h3>Contact Me</h3>
+                    <p><ion-icon name="mail-outline"></ion-icon>vickygoswami782@gmail.com</p>
+                    <p><ion-icon name="call-outline"></ion-icon>7497087065</p>
+                    <p><ion-icon name="home-outline"></ion-icon>House no 45c/Azad nagar/panipat</p>
+                    <a href="https://www.linkedin.com/in/vinay-gauswami-30a660259/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-twitter"></ion-icon></a><br>
+                    <!-- <button class="btn"><a href="images/vinay gauswami.pdf">Donwload CV</a></button> -->
+                </div>
+                <div class="contact-col-2">
+                    <form action=""   name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Type name" >
+                        <input type="email" name="Email"placeholder="Type email" >
+                        <textarea name="Message" rows="6" placeholder="Type message" class="msg"></textarea>
+                     <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+            
+
+        </div>
+    </div>
+
+
+    <!-- header section -->
+
+
+    <div id="header">
+            <p> &copy; 2023  ALL RIGHT RESERVED</p>
+    </div>
+
+    <script>
+            var tablinks=document.getElementsByClassName("tab-link");
+            var tabcontents=document.getElementsByClassName("tab-content");
+
+            function show(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-content");
+                }
+
+                event.currentTarget.classList.add("active-link")
+                document.getElementById(tabname).classList.add("active-content");
+            }
+
+    </script>
+
+
+<script>
+        var tabmeu=document.getElementById("tab-link");
+      
+        function openmenu(){
+            tabmeu.style.right="0";
+        }
+
+        function closemenu(){
+            tabmeu.style.right="-180px";
+        }
+</script>
+
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzwjzLH0fcp_LGr4Kn38YEpySNzpQJcOdQbZ20DPSEawsruCNaCqbsmmexVPAuF851GAA/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const mg=document.getElementById("msg");
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL,{ method: 'POST', body: new FormData(form)})
+        .then(response => {
+            mg.innerHTML="Message sent successfully"
+            setTimeout(function(){
+                mg.innerHTML="";
+            },5000)
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
